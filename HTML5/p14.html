@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pic{
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas tag(2d graphics)</h1>
+    <canvas id="pic"></canvas>
+    <script>
+        var cn=document.getElementById('pic');
+        var ctx=cn.getContext("2d");
+        ctx.font="30px serif";
+        ctx.strokeText("welcome to css",10,60);
+    </script>
+</body>
+</html>

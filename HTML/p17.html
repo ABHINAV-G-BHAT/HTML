@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form tags</h1>
+    <form action="" method="" autocomplete="" enctype="">
+        <fieldset>
+            <legend>login form</legend>
+            <label for="user">enter username</label>
+            <input type="text" name="user" id="user" placeholder="enter only a-z" pattern="[a-z]" value="admin" readonly required>
+            <!-- required->makes the field to be mandatorily filled -->
+            <!-- pattern->fixes values to be entered -->
+            <!-- input attributes
+                type-> type of input 
+                name-> name of input
+                value->input value
+                id->field id
+                placeholder-> hint to the user
+                readonly->write protected
+                disabled->disables the field completely
+
+                min->minimum number
+                max->maximum number
+                minlength->min length of char
+                maxlength->max length of char
+            -->
+            <br><br>
+            <label for="pass">enter password</label>
+            <input type="password" name="pass" id="pass" required>
+            <br><br>
+            <input type="submit" value="login">
+        </fieldset>
+    </form>
+    <!-- form elements
+        form
+        fieldset->line of border around form
+        legend->add title to the form by creating fieldset
+        label->title of input
+        input->15 types
+        -text,password,email,number,radio input,checkbox,data,datetime,datetime-local,week,month,time,search,range,color,file,url
+         image,hidden,submit,reset
+        select->dropdown
+        textarea->multiline text
+-->
+<!-- form attributes 
+    action->action path/server path/server url address
+    method->get->while sending data will be visible
+            post->while sending data to server(it hides)
+    autocomplete->to clear form history(off)
+                  uses prev form history(on)
+    enctype-> application/x-www-form-urlencoded->form data enc type
+              multipart/form data->if form has input type file
+-->
+</body>
+</html>

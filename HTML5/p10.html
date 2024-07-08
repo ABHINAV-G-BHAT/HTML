@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+                padding: 8px,10px;
+                border: none;
+                font-size: 1.1rem;
+                font-weight: bold;
+                cursor: pointer;
+        }
+        #show{
+            background-color: teal;
+            color: white;
+        }
+        .bin{
+            background-color: green;
+            color: white;
+        }
+        .cls{
+            background-color: orangered;
+            color: white;
+            float: right;
+
+        }
+        dialog{
+            width: 40%;
+        }
+        form{
+            display: block;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px;
+            gap: 10px;
+        }
+        input{
+            padding: 10px 12px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>login form</h1>
+    <form action=""></form>
+    <button id="show">Login</button>
+    <dialog id="login">
+        <button class="cls">Close</button>
+        <form>
+            <div class="item">
+                <label for="user">enter username</label>
+                <input type="text" name="user" id="user" placeholder="enter username" required>
+            </div>
+            <div class="item">
+                <label for="pass">enter password</label>
+                <input type="password" name="pass" id="pass" placeholder="enter password">
+            </div>
+            <div class="item">
+                    <button type="submit" class="bin">Login</button>
+                    
+            </div>
+        </form>
+     </dialog>
+    <script>
+        var sh=document.getElementById('show');
+        var login=document.getElementById('login');
+        var cl=document.querySelector('.cls');
+        sh.addEventListener('click',function(){
+            login.show()
+        }
+    )
+        cl.addEventListener('click',function(){
+            login.close()
+        }
+    )
+    </script>
+</body>
+</html>
