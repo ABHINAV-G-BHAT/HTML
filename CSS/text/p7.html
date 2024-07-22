@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .b1 p{
+            text-overflow: clip;
+        }
+        .b2 p{
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <h1>text overflow</h1>
+    <h3>clip</h3>
+    <div class="b1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quas labore veniam mollitia, sapiente atque eaque officia voluptate delectus! Iure, vitae sit nam aliquid consectetur tempora. Ipsa quas alias aliquid.
+        Fugit veniam temporibus dignissimos eum dolor, pariatur explicabo perferendis eos eligendi id voluptatum rerum dolores voluptates, commodi eius maiores odit. Praesentium natus voluptas repellendus necessitatibus unde, odio tenetur amet distinctio!</p>
+    </div>
+    <h3>ellipsis</h3>
+    <div class="b2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quas labore veniam mollitia, sapiente atque eaque officia voluptate delectus! Iure, vitae sit nam aliquid consectetur tempora. Ipsa quas alias aliquid.
+        Fugit veniam temporibus dignissimos eum dolor, pariatur explicabo perferendis eos eligendi id voluptatum rerum dolores voluptates, commodi eius maiores odit. Praesentium natus voluptas repellendus necessitatibus unde, odio tenetur amet distinctio!</p>
+    </div>
+</body>
+</html>

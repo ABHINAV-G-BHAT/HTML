@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled{
+            background: tomato;
+            border: 2px solid seagreen;
+        }
+        input:disabled{
+            background:burlywood;
+            border: 2px solid seagreen;
+        }
+        p{
+            padding: 10px;
+        }
+        p:empty{
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>enabled, :disabled and :empty</h1>
+    <form action="">
+        <label for="">name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="password">password</label>
+        <input type="text" name="password" id="password" disabled> 
+    </form>
+    <hr>
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <p></p>
+        <p>p4</p>
+    </div>
+</body>
+</html>

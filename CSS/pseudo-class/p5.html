@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="radio"]:checked{
+            border: none;
+            outline: 2px solid darkred;
+        }
+        input[type="checkbox"]:checked{
+            border: none;
+            outline: 2px solid darkred;
+        }
+        input[type="radio"]:default{
+            border: none;
+            outline: 2px solid darkred;
+        }
+        input[type="checkbox"]:default{
+            border: none;
+            outline: 2px solid darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>checked and :default</h1>
+    <form action="">
+        <label for="">choose gender</label>
+        <input type="radio" name="gender" value="male" id="">male
+        <input type="radio" name="gender" value="female" checked id="">female
+        <input type="radio" name="gender" value="other" id="">other
+    </form>
+    <hr>
+    <form action="">
+        <label for="">choose gender</label>
+        <input type="checkbox" name="lang1" value="eng" checked id="">eng
+        <input type="checkbox" name="lang2" value="kan" id="">kan
+        <input type="checkbox" name="lang3" value="hin" id="">hin
+    </form>
+</body>
+</html>

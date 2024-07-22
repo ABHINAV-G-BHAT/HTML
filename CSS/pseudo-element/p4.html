@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input::file-selctor-button{
+            padding: 10px 10px;
+            background-color: bisque;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        input::placeholder{
+            color: orangered;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>::file-selector-button and ::placeholder</h1>
+    <form action="">
+        <label for="">upload file</label>
+        <!-- <input type="file" name="resume" id="resume" accept="application.pdf"> -->
+         <input type="file" name="mypic" id="mypic" accept="image/png.image/jpg.image/jpeg.image/webp">
+         <input type="text" name="name" id="name" placeholder="enter name">
+    </form>
+</body>
+</html>

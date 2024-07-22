@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: bisque;
+            padding: 10px;
+            display: flex;
+        }
+        .container div{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+        }
+        .container div:target{
+            background-color: aquamarine;
+            color: black;
+        }
+        nav a:focus{
+            background-color: orchid;
+            padding: 10px 10px;
+            color: navy;
+        }
+        input:focus{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>focus and target</h1>
+    <nav>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <section class="container">
+        <div id="home">
+            <h3>home section</h3>
+        </div>
+    <section class="container">
+        <div id="about">
+            <h3>about section</h3>
+        </div>
+    <section class="container">
+        <div id="contact">
+            <h3>contact section</h3>
+        </div>
+    </section>
+</body>
+</html>
