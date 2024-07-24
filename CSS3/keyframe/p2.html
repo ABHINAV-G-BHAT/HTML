@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blk{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            animation-name: anim_block;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;/* count number,infinite */
+        }
+        @keyframes anim_block{
+            from{
+                transform: translate(0px,0px);
+            }
+            to{
+                transform:translate(1200px,480px) ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>keyframes</h1>
+    <!-- from and to @keyFrames -->
+     <div class="blk"></div>
+</body>
+</html>

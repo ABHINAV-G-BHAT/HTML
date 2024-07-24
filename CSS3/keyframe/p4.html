@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blk{
+            width: 100px;
+            height: 100px;
+            clip-path: circle();
+            background-color: aquamarine;
+            animation-name: anim_block;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;/* count number,infinite */
+        }
+        @keyframes anim_block{
+            0%{
+                transform: translate(1440px,0px);
+            }
+            20%{
+                transform: translate(300px,0px);
+            }
+            40%{
+                transform: translate(720px,0px);
+            }
+            60%{
+                transform: translate(900px,600px);
+            }
+            80%{
+                transform: translate(1440px,1440px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>keyframes</h1>
+    <!-- from and to @keyFrames -->
+     <div class="blk"></div>
+</body>
+</html>
