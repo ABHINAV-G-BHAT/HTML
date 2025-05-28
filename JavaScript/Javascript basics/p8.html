@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Nan(not a number scenario) isNan(val) </h1>
+    <script>
+        console.log('Nan = ',NaN)
+        console.log('isNan = ',isNaN)//true
+        console.log('NaN = ',typeof NaN) //number
+        console.log('\n')
+        console.log('isNaN(1)=',isNaN(1))//false
+        console.log('isNaN(-2e-5)=',isNaN(-2e-5))//false
+        console.log('isNaN(Infinity)=',isNaN(Infinity))//false
+        console.log('isNaN(-Infinity)=',isNaN(-Infinity))//false
+        console.log('isNaN(true)=',isNaN(true))//false
+        console.log('isNaN(false)=',isNaN(false))//false
+        console.log('isNaN("")=',isNaN(""))//false
+        console.log('isNaN("55")=',isNaN("55"))//false
+        console.log('isNaN("-55")=',isNaN("-55"))//false
+        console.log('isNaN("new Date()")=',isNaN("new Date()"))//false
+        console.log('\n')
+        // not a number
+        console.log('isNan("123")=',isNaN("123"))//true
+        console.log('isNan("hello")=',isNaN("hello"))//true
+        console.log('isNan(undefined)=',isNaN(undefined))//true
+        console.log('isNan(funtion(){})=',isNaN(function(){}))//true
+        console.log('isNan({id:1})=',isNaN({id:1}))//true
+        console.log('isNan([1,2,3,4,5])=',isNaN([1,2,3,4,5]))//true
+    </script>
+</body>
+</html>
